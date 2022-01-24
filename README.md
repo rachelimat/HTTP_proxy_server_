@@ -1,34 +1,13 @@
 # MY_Tour
 RACHELI MATZLIACH
 
-The program realizes a simple HTTP proxy server with threads.
+My first website -My Travel Pool
 
-Input:
-<port number><num of threads><num of tasks>
-  
-Output:
-By client .
-  
-Run:
-./server  + port + num of threads + num of tasks.
-  
-  
-int mainProgram() - the program flow.
-serveNewClients() - serve the client by listening to socket array .
-handleRequest() – handles client request.
-void errorInInput();
-int checkIfNum(char * string);
-char * CheckingPermissions(char *path,int sock);
-int connectServerSocket(int argc ,char *argv[]);
-int handleRequest(void * socket);
-char * serverResponce(int  socketFd , char * path, struct stat fileStat );
-void getLastModified(char *buf, char* path);
-void getDate(char *buf);
-char *getMimeType(char *name);
-char * createFcase(char* path,int sock,int flag);
-void creatResponse(int respone,int  socket,char  ContentType []);
-void writeResponsToSocket(int socketFd,char * response,char * path);
-void loadFile( char *path , int  socketFd );
-void checkInput(int argc , char * argv[] );
-int * serveNewClients(int argc , char *argv[] , int socketFd);
+the project was developed as a part of Distributed Systems course.
 
+link to the website: http://rachelgm.mysoft.jce.ac.il/TravelPool.html
+![image](https://user-images.githubusercontent.com/64254290/150850545-f89eb76f-8db4-436e-8dd1-a50d801c275d.png)
+Technologies:
+JavaScript, CSS, HTML
+jQuary, ajax
+YouTube API
