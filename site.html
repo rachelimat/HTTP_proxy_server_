@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/../css/styles.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="/../js/siteForm.js"></script>
+
+</head>
+
+<body>
+<!-- INTRODUCTION -->
+    <div class="about-section">
+        <h1>Tours Managment System</h1>
+        <p> By Yael Ben Hamo & Racheli Matzliach</p>
+
+    </div>
+
+    <h2 style="text-align:center">Add Site</h2>
+
+    <center>
+        <div>
+
+        <button class="add_site" id="add_site" onclick="addSite()"> Add Site</button>
+        <button class="add_site" id="close" onclick="back()">Close</button>
+        
+        </div>
+
+    </center>
+
+    <div id='sites'></div>
+
+    <!-- MODAL OF THE FORM -->
+    <div id="myModal2" class="modal">
+            <span class="close2">&times;</span>
+            <div id="parent_form" class="col-sm-6 col-sm-offset-3">
+
+                <h1>add new site</h1>
+
+                <!-- OUR FORM -->
+            
+            <form id="site_form" name="site_form" method="POST" >
+                <!-- //??method -->
+
+                <!-- tour ID -->
+                <div id="name-group" class="form-group">
+                    <label for="id">Tour Id</label>
+                    <input type="text" class="form-control" name="id_" id="id_" placeholder="write id here" required>
+                    <!-- errors will go here -->
+                </div>
+
+                <!-- site name -->
+                <div id="name-group" class="form-group">
+                    <label for="site_name">Name</label>
+                    <input type="text" class="form-control" name="sitename" id="sitename" placeholder="write site name here" required>
+                    <!-- errors will go here -->
+                </div>
+
+                <!-- index -->
+                <div id="name-group" class="form-group">
+                    <label for="duration">Index</label>
+                    <input type="number" class="form-control" name="index" id="index" placeholder="write index here" required>
+                    <!-- errors will go here -->
+                </div>  
+                
+                    <!-- country -->
+                    <div id="name-group" class="form-group">
+                    <label for="price">Country</label>
+                    <input type="text" class="form-control" name="country" id="country" placeholder="write country here" required>
+                    <!-- errors will go here -->
+                </div>  
+
+                <button id="submit" type="submit" class="btn btn-success">Submit</button>
+                <button id="cancel" type="cancel" class="btn btn-success">Cancel</button>
+
+
+            </form>
+
+        </div>
+        
+    </div>
+
+
+</body>

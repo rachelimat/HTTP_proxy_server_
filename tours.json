@@ -1,0 +1,25 @@
+{
+  "fop": {
+    "id": "fop",
+    "start_date": "2022-01-29",
+    "duration": "222",
+    "price": "2",
+    "sites": [],
+    "cupon": {
+      "gift1167": {
+        "code": "gift1167",
+        "percent": "7",
+        "start_date": "2022-01-09",
+        "expire_date": "2022-02-01"
+      }
+    }
+  },
+  "eop": {
+    "id": "eop",
+    "start_date": "2022-01-30",
+    "duration": "12",
+    "price": "1000",
+    "sites": [],
+    "cupon": {}
+  }
+}
