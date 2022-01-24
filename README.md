@@ -1,17 +1,18 @@
 # MY_Tour
 RACHELI MATZLIACH
-Ex3
-Files:
-C file :
-server.c- servers the client .
-threadpool.c- queue of tasks.
-Readme - summery for this exercise plus instruction to run this exercise.
+
+The program realizes a simple HTTP proxy server with threads.
+
 Input:
 <port number><num of threads><num of tasks>
+  
 Output:
 By client .
+  
 Run:
 ./server  + port + num of threads + num of tasks.
+  
+  
 int mainProgram() - the program flow.
 serveNewClients() - serve the client by listening to socket array .
 handleRequest() – handles client request.
