@@ -1,6 +1,5 @@
 # MY_Tour
 RACHELI MATZLIACH
-
 My first website -My Travel Pool
 
 the project was developed as a part of Distributed Systems course.
